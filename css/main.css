@@ -204,9 +204,14 @@ main{
     margin: 2rem 0;
 }
 
-.cta{
-    display: block;
-    margin: 2rem auto;
+p.cta{
+    text-align: center;
+}
+
+a.cta{
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 2rem;
     border-radius: 5px;
     font-size: 1.5rem;
     color: inherit;
@@ -218,7 +223,7 @@ main{
     transition: all .2s;
 }
 
-.cta:hover{
+a.cta:hover{
     background-color: #222;
     color: #eee;
 }
