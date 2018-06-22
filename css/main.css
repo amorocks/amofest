@@ -222,3 +222,36 @@ main{
     background-color: #222;
     color: #eee;
 }
+
+@media screen and (max-width: 650px) {
+    
+    html{
+        font-size: 14px;
+    }
+
+    .container{
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+}
+
+@media screen and (max-width: 410px) {
+    
+    h1{
+        font-size: 80px;
+    }
+
+    .lead{
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+    
+    h1{
+        font-size: 60px;
+    }
+
+}
