@@ -100,14 +100,13 @@ html{
 }
 
 body{
-    background: #a8ff78;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    min-height: 100vh;
-}
+    /*background: #a8ff78;  
+    background: -webkit-linear-gradient(to left, #78ffd6, #a8ff78);  
+    background: linear-gradient(to left, #78ffd6, #a8ff78);*/
+    
+background-image: linear-gradient(to bottom right, #43e97b 0%, #38f9d7 100%);
 
-header{
-    text-align: center;
+    min-height: 100vh;
 }
 
 /* ==========================================================================
@@ -166,10 +165,64 @@ header{
    Info.html
    ========================================================================== */
 
+.container{
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
 h1{
-    margin: 0;
     font-family: 'Londrina Shadow', sans-serif;
     font-size: 110px;
+    margin: 0;
+}
+
+header{
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.lead{
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+.justify{
+    text-align: justify;
+}
+
+.cta{
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.cta a{
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    transition: all .2s;
+    background-color: rgba(34, 34, 34, 0.5);
+    color: #eee;
+}
+
+a.cta:hover{
+    background-color: transparent;
+    color: inherit;
+}
+
+
+
+/* --------------------------- main --------------------------- */
+
+.main{
+    text-align: justify;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 2rem 1.5rem;
 }
 
 h2{
@@ -180,63 +233,18 @@ h2{
     font-size: 2rem;
 }
 
+.main h2:first-child{
+    margin-top: 0;
+}
+
 h2+p{
     margin-top: 5px;
-}
-
-p{
-    text-align: justify;
-}
-
-.lead{
-    margin-top: 0;
-    font-size: 15px;
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-}
-
-.container{
-    width: 600px;
-    margin: 2rem auto;
-}
-
-main{
-    margin: 2rem 0;
-}
-
-p.cta{
-    text-align: center;
-    margin: 2rem 0;
-}
-
-a.cta{
-    display: inline-block;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.5rem;
-    border: 2px solid #222;
-    padding: 1rem 1.5rem;
-    cursor: pointer;
-    font-family: 'Raleway', sans-serif;
-    transition: all .2s;
-    background-color: #222;
-    color: #eee;
-}
-
-a.cta:hover{
-    background-color: transparent;
-    color: inherit;
 }
 
 @media screen and (max-width: 650px) {
     
     html{
         font-size: 14px;
-    }
-
-    .container{
-        width: 90%;
-        margin: 2rem auto;
     }
 
 }
