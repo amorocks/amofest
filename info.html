@@ -28,6 +28,25 @@
             <div class="cta">
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1WNRgZSAxIr9-j-fxxaUXTVGRKiZtxOex4khUYbFNtMCLVA/viewform?usp=sf_link" target="_blank">Nu aanmelden &gt;</a>
             </div>
+            <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+            <div style='overflow:hidden;height:300px'><div id='gmap_canvas' style='height:300px;'></div><div><small><a href="http://www.googlemapsgenerator.com/de/">googlemapsgenerator DE</a></small></div><div><small><a href="https://mrpromocode.com.au/sephora-promo-code-free-shipping-beauty-breakthroughs-2018/">mrpromocode</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:16,center:new google.maps.LatLng(51.6919086,4.889415999999983),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);pos = new google.maps.LatLng(51.6919086,4.889415999999983);
+            marker = new google.maps.Marker({map: map,position: pos});infowindow = new google.maps.InfoWindow({content:'<strong>Hier afzetten</strong><br>Parkeerplaats naastgelegen zwembad<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);
+            pos2 = new google.maps.LatLng(51.6921169,4.8866142);
+              marker2 = new google.maps.Marker({map: map,position: pos2});infowindow = new google.maps.InfoWindow({content:'<strong>Evenement locatie</strong><br>Scouting Raamsdonksveer<br>'});google.maps.event.addListener(marker2, 'click', function(){infowindow.open(map,marker2);});infowindow.open(map,marker2);
+            var directionsService = new google.maps.DirectionsService;
+            var directionsDisplay = new google.maps.DirectionsRenderer({map: map});directionsService.route({
+                      origin: pos,
+                      destination: pos2,
+                      travelMode: 'WALKING'
+                    }, function(response, status) {
+                      // Route the directions and pass the response to a function to create
+                      // markers for each step.
+                      if (status === 'OK') {
+                        directionsDisplay.setDirections(response);
+                      }
+                    });
+              
+              }google.maps.event.addDomListener(window, 'load', init_map);</script>
         </header>
         <div class="main">
             <h2>Wanneer?</h2>
